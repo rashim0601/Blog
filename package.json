@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "This is a project of blog website",
   "dependencies": {
+    "body-parser": "^1.20.3",
     "ejs": "^3.1.10",
     "express": "^4.21.2"
   }

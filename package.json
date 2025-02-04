@@ -8,5 +8,9 @@
   "keywords": [],
   "author": "Rashim Malhotra",
   "license": "ISC",
-  "description": "This is a project of blog website"
+  "description": "This is a project of blog website",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  }
 }

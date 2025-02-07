@@ -1,0 +1,13 @@
+<%- include("header.ejs") -%>
+<h1>Compose</h1>
+<form method="post" action="http://localhost:3000/compose">
+    <div class="form-group">
+        <label>Title</label>
+        <input type="text" class=form-control name="titleBody">
+        <label>Post</label>
+        <textarea name="postBody" cols="150" rows="5" class="form-control"></textarea>    
+    </div>
+    <button type="submit" class= "btn btn-primary">Publish</button>
+
+</form>
+<%- include("footer.ejs") -%>

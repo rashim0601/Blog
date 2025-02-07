@@ -8,8 +8,8 @@ const app = express();
 const homeStartingContent = "Your personal space to capture thoughts, ideas, and moments—one day at a time. Whether you're documenting your daily experiences, brainstorming creative ideas, or simply expressing yourself, Daily Journal provides a simple and intuitive platform to write, reflect, and grow."
 const aboutContent = "Welcome to Daily Journal, your personal space to capture thoughts, ideas, and experiences—one day at a time. Whether you're reflecting on daily moments, setting goals, or expressing creativity, this platform is designed to help you write freely and stay organized.";
 const aboutMission = "At Daily Journal, we believe that writing is a powerful tool for self-expression, reflection, and growth. Our goal is to provide a simple, distraction-free, and intuitive platform where you can document your thoughts, revisit past entries, and create a habit of journaling that enriches your daily life.";
-const contactContent = "Scelerisque eleifend donec pretium vulputate sapien. Rhoncus urna neque viverra justo nec ultrices. Arcu dui vivamus arcu felis bibendum. Consectetur adipiscing elit duis tristique. Risus viverra adipiscing at in tellus integer feugiat. Sapien nec sagittis aliquam malesuada bibendum arcu vitae. Consequat interdum varius sit amet mattis. Iaculis nunc sed augue lacus. Interdum posuere lorem ipsum dolor sit amet consectetur adipiscing elit. Pulvinar elementum integer enim neque. Ultrices gravida dictum fusce ut placerat orci nulla. Mauris in aliquam sem fringilla ut morbi tincidunt. Tortor posuere ac ut consequat semper viverra nam libero.";
-
+const contactContent = "Have questions, feedback, or suggestions? ";
+const nxtLine = "We'd love to hear from you! Whether you need support or just want to share your thoughts, feel free to reach out." 
 
 app.set('view engine', 'ejs');
 
@@ -23,7 +23,9 @@ app.get("/about" , (req, res)=>{
 });
 
 app.get("/contact" , (req, res)=>{
-    res.render("contact", {content: contactContent});
+    res.render("contact", {content: contactContent,
+        next: nxtLine
+    });
 });
 
 app.get("/compose" , (req, res)=>{
